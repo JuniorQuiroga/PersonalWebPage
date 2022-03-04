@@ -1,0 +1,212 @@
+body{
+	background-color: rgb(31, 31, 31);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	display: block;
+}
+
+title{
+	display: none;
+}
+
+/*TITULO*/
+.web_name{
+	background: rgb(18, 18, 18);
+
+	text-align: center;
+	border-radius:50px;
+	font-size: 18pt;
+	font-weight: bolder;
+
+	padding: 10px;
+	margin: 10px 20% 10px 20%;
+}
+.web_name span{
+	
+	color: rgb(255,255,255);
+}
+
+/*NAVEGACION*/
+.navegation {
+	border-radius: 7px;
+	padding-left: 15px;
+	margin: 10px 20vw 10px 20vw;
+
+	list-style-type: none;
+	overflow: hidden;
+
+	background-color: rgb(18, 18, 18);
+  
+}
+
+.navegation a {
+	float: left;
+	color: rgb(187, 134, 252);
+	text-align: center;
+	text-decoration: none;
+	font-size: 13pt;
+
+	display: block;
+	border-radius: 5px;
+	padding: 5px 16px;
+	margin: 5px ;
+}
+
+.navegation a:hover {
+	background-color: rgba(214, 183, 253, 0.219);
+	box-shadow: 0px 2px 5px rgba(149, 127, 176, 0.164);
+}
+
+.navegation a.menu{
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.navegation a:not(#active){display: none;}
+	.navegation a.menu{
+		display: block;
+		width: 20px;
+		margin: 2px;
+		padding: 8px;
+		float: right;
+		filter:invert();
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.navegation.responsive {position: relative;}
+	
+	.navegation.responsive #active,
+	.navegation.responsive a:not(#active){
+		display:block;
+		text-align: left;
+		float: none;
+	}
+	
+	.navegation.responsive #active:not(.menu){
+		margin-right: 42px;
+	}
+
+	.navegation.responsive a.menu{
+		position:absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+}
+
+
+/*INTRODUCCIÓN BASE*/
+#card{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-around;
+
+	border-radius:10px;
+	width: 720px;
+	max-width: 80vw;
+	padding: 10px ;
+	margin: auto;
+	
+	background: rgb(18, 18, 18);
+}
+
+#card #card-name{
+	font-size: 15pt;
+	font-weight: bolder;
+
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	color: rgb(256,256,256);
+	
+	background-color: rgb(121, 0, 255);
+}
+
+#card #content{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+#card .left{
+	float: left;
+	margin-right: 5px;
+}
+#card .right{
+	float: left;
+	margin-left: 5px;
+}
+
+#card #card-p{
+	font-size: 14pt;
+	text-align: justify;
+
+	border-radius: 10px;
+	padding: 15px;
+	margin-bottom: 10px;
+	
+	color: rgb(256,256,256);
+	
+	background-color: rgb(40, 40, 40);
+}
+
+
+#card img{
+
+	border-radius: 10px;
+
+	object-fit: cover;
+	object-position: 100% 0;
+
+}
+
+
+/*ARTICULOS DE POST*/
+.articulos{
+	width: 1000px;
+	max-width: 90vw;
+	margin: auto;
+}
+
+.articulo{
+	
+	border-radius:10px;
+	padding: 15px;
+	margin-top: 10px;
+	color: rgb(221, 221, 221);
+	background: rgb(40, 40, 40);
+}
+
+.articulo span{
+	margin-bottom:15px;
+
+	font-size: 15pt;
+	font-weight: bold;
+	border-radius:10px;
+}
+
+.articulo p{
+	font-size: 13pt;
+	text-align: justify;
+
+	border-radius:10px;
+	padding: 10px;
+	margin: 5px 0 0 15px;
+	
+	box-shadow: inset 3px 3px 3px rgba(18, 18, 18, 0.5);;
+	background:  rgba(69, 69, 69, 0.459);
+}
+
+video{
+	margin-top: 10px;
+	border-radius: 5px;
+}
