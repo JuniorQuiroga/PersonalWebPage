@@ -1,7 +1,3 @@
-body{
-	background-color: rgb(31, 31, 31);
-}
-
 *{
 	padding: 0;
 	margin: 0;
@@ -11,9 +7,13 @@ body{
 	display: block;
 }
 
+body{
+	background-color: rgb(31, 31, 31);
+}
 title{
 	display: none;
 }
+
 
 /*TITULO*/
 .web_name{
@@ -27,8 +27,8 @@ title{
 	padding: 10px;
 	margin: 10px 20% 10px 20%;
 }
+
 .web_name span{
-	
 	color: rgb(255,255,255);
 }
 
@@ -36,7 +36,9 @@ title{
 .navegation {
 	border-radius: 7px;
 	padding-left: 15px;
-	margin: 10px 20vw 10px 20vw;
+	margin: auto;
+	margin-bottom: 10px;
+	width: 80vw;
 
 	list-style-type: none;
 	overflow: hidden;
@@ -98,7 +100,7 @@ title{
 		right: 0px;
 		top: 0px;
 	}
-
+	
 }
 
 
@@ -109,66 +111,64 @@ title{
 	flex-wrap: wrap;
 	align-content: space-around;
 	justify-content: space-around;
-
+	
 	border-radius:10px;
-	width: 60vw;
+	width: 50vw;
 	padding: 10px ;
 	margin: auto;
 	
 	background: rgb(18, 18, 18);
 }
 
-#card #card-name{
+@media screen and (max-width: 480px) {
+	
+}
+
+#card #container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:10px;
+}
+
+#card #item0{
+	grid-column: 1/4;
+	
 	font-size: 15pt;
 	font-weight: bolder;
-
+	
 	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
 	color: rgb(256,256,256);
-	
 	background-color: rgb(121, 0, 255);
 }
 
-#card #content{
-	display: flex;
-	flex-direction: row;
-	margin-top: 10px;
-}
-
-#card .left{
-	float: left;
-	margin-right: 5px;
-}
-#card .right{
-	float: left;
-	margin-left: 5px;
-}
-
-#card #card-p{
+#card #item1{
+	grid-column: 1/3;
+	
 	font-size: 14pt;
 	text-align: justify;
-
 	border-radius: 10px;
 	padding: 15px;
-	margin-bottom: 10px;
-	
+
 	color: rgb(256,256,256);
-	
 	background-color: rgb(40, 40, 40);
 }
 
-
 #card img{
-	width: 40vw;
-	min-width: auto;
-	border-radius: 10px;
 
+	border-radius: 10px;
 	object-fit: cover;
 	object-position: 100% 0;
-
 }
 
+#card #item5{
+	grid-column: 1/3;
+}
+
+#card #item6{
+	grid-column: 1/3;
+}
 
 /*ARTICULOS DE POST*/
 .articulos{
